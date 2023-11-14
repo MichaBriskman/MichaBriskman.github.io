@@ -11369,7 +11369,7 @@ pre .code {
   width: 300px;
 }
 
-/* .social-icons {
+.social-icons {
   list-style-type: none;
   padding-left: 0;
   display: -webkit-box;
@@ -11381,18 +11381,8 @@ pre .code {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 180px;
-} */
-
-.social-icons {
-  list-style-type: none;
-  padding-left: 0;
-  max-width: 80px;
 }
 
-.social-item {
-  display: inline-block; /* Display list items side by side */
-  margin-right: 10px; /* Add margin for spacing between icons if needed */
-}
 
 .social-icons .social-link {
   font-size: 18px;

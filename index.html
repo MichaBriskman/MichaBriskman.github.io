@@ -16,7 +16,7 @@
     <a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Components</a>
     <header class="header">
         <div class="container">
-            <ul class="social-icons pt-3">
+            <ul class="social-icons pt-8">
                 <li class="social-item"><a class="social-link text-light" href="https://www.linkedin.com/in/micha-briskman-b45b5a69/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
                 <li class="social-item"><a class="social-link text-light" href="https://github.com/MichaBriskman"><i class="ti-github" aria-hidden="true"></i></a></li>
             </ul>  
@@ -71,9 +71,45 @@
                 <h3 class="font-weight-light">Who am I ?</h3>
                 <span class="line mb-5"></span>
                 <h5 class="mb-3">A Software Developer</h5>
-                <p class="mt-20">I'm Micha Briskman, a diligent software developer with a bachelor's degree in computer science from Hadassah
-                     Academic College. I graduated with a GPA of 85, underscoring my academic excellence and dedication. My journey extended into an intensive 5-week boot camp by Scale-Up Velocity, where I deepened my industry-level programming proficiency, honing the art of crafting clean, elegant, and efficient code. Beyond the realm of coding, my interests spill over into hobbies like surfing, bartending, indulging in specialty coffee, and exploring the world of cooking. These pursuits not only offer relaxation but have also honed my attention to detail and passion for experimentation. I take immense pride in being a dynamic team player, bolstered by a "Can-do" attitude and an insatiable drive to remain updated with the latest in emerging technologies. As I envision the next chapter of my career, I'm actively seeking a role that not only positions me at the forefront of technological innovation but also resonates with my intrinsic interests, ensuring a harmonious blend of professional growth, personal fulfillment, and positive impact on the world.</p>
-                <button class="btn btn-outline-danger"><i class="icon-down-circled2 "></i>Download My CV</button>
+                <p class="mt-20">
+                    A recent Computer Science graduate from Hadassah Academic College. 
+                    I have graduated with a GPA of 92. I have a deep understanding of algorithms, data structures, 
+                    and programming languages. My academic studies has not only equipped me with theoretical knowledge but has also instilled in me 
+                     a practical and problem-solving approach to software development. In addition to my formal education in computer science, my passion 
+                     for coding has driven me to embark on diverse projects spanning multiple programming languages. 
+                     From crafting web applications using JavaScript, HTML, CSS and REACT, to developing robust backend systems in Python and C++
+                     , and delving into the intricacies of data manipulation with SQL, I have gained hands-on experience across a spectrum of languages. 
+                     Whether creating responsive and user-friendly interfaces or optimizing algorithms for efficiency, my projects reflect a commitment to versatility 
+                     and a desire to master the intricacies of various coding languages. 
+                     These experiences have not only honed my technical skills but have also cultivated an adaptive mindset 
+                     that I am eager to bring to the forefront of a dynamic and challenging industry.  
+                    </p>
+                <button class="btn btn-outline-danger" onclick="downloadPdf()"><i class="icon-down-circled2 "></i>Download My CV</button>
+                <script>
+                    function downloadPdf() {
+                        // Replace 'path/to/your/cv.pdf' with the actual path to your PDF file
+                        const pdfPath = 'assets/imgs/Micha Briskman CV.pdf';
+                
+                        // Create an anchor element
+                        const link = document.createElement('a');
+                
+                        // Set the download attribute with the desired file name
+                        link.download = 'Micha Briskman CV.pdf';
+                
+                        // Set the href attribute to the path of the PDF file
+                        link.href = pdfPath;
+                
+                        // Append the anchor element to the document
+                        document.body.appendChild(link);
+                
+                        // Trigger a click on the anchor element to start the download
+                        link.click();
+                
+                        // Remove the anchor element from the document
+                        document.body.removeChild(link);
+                    }
+                </script>
+                
             </div>
             <div class="col-lg-4 about-card">
                 <h3 class="font-weight-light">Personal Info</h3>
